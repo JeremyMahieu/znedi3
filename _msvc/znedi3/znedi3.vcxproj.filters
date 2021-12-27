@@ -57,6 +57,9 @@
     <ClInclude Include="..\..\znedi3\x86\kernel_avx_common.h">
       <Filter>Header Files\x86</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\vsxx\VapourSynth\VapourSynth4.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\znedi3\weights.cpp">

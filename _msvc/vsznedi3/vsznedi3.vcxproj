@@ -28,7 +28,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>Intel C++ Compiler 2021</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -41,7 +41,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>Intel C++ Compiler 2021</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
@@ -77,7 +77,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\..\znedi3;$(ProjectDir)..\..\vsxx;$(ProjectDir)..\..\vsznedi3</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\znedi3;$(ProjectDir)..\..\vsxx;$(ProjectDir)..\..\vsxx\VapourSynth;$(ProjectDir)..\..\vsznedi3</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
@@ -93,7 +93,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\..\znedi3;$(ProjectDir)..\..\vsxx;$(ProjectDir)..\..\vsznedi3</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\znedi3;C:\Users\mahie\Repo\znedi3\vsxx\VapourSynth;$(ProjectDir)..\..\vsxx;$(ProjectDir)..\..\vsznedi3</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
@@ -107,7 +107,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\..\znedi3;$(ProjectDir)..\..\vsxx;$(ProjectDir)..\..\vsznedi3</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\znedi3;C:\Users\mahie\Repo\znedi3\vsxx\VapourSynth;$(ProjectDir)..\..\vsxx;$(ProjectDir)..\..\vsznedi3</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
@@ -123,7 +123,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\..\znedi3;$(ProjectDir)..\..\vsxx;$(ProjectDir)..\..\vsznedi3</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\znedi3;$(ProjectDir)..\..\vsxx;$(ProjectDir)..\..\vsxx\VapourSynth;$(ProjectDir)..\..\vsznedi3</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
@@ -135,15 +135,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\vsxx\vsxx_pluginmain.cpp" />
+    <ClCompile Include="..\..\vsxx\vsxx4_pluginmain.cpp" />
     <ClCompile Include="..\..\vsznedi3\vsznedi3.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\vsxx\VapourSynth++.hpp" />
-    <ClInclude Include="..\..\vsxx\VapourSynth.h" />
-    <ClInclude Include="..\..\vsxx\VSHelper.h" />
-    <ClInclude Include="..\..\vsxx\VSScript.h" />
+    <ClInclude Include="..\..\vsxx\VapourSynth\VapourSynth.h" />
+    <ClInclude Include="..\..\vsxx\VapourSynth\VSHelper.h" />
+    <ClInclude Include="..\..\vsxx\VapourSynth\VSScript.h" />
     <ClInclude Include="..\..\vsxx\vsxx_pluginmain.h" />
+    <ClInclude Include="..\..\vsxx\VapourSynth++4.hpp" />
+    <ClInclude Include="..\..\vsxx\VapourSynth\VapourSynth4.h" />
+    <ClInclude Include="..\..\vsxx\VapourSynth\VSHelper4.h" />
+    <ClInclude Include="..\..\vsxx\VapourSynth\VSScript4.h" />
+    <ClInclude Include="..\..\vsxx\vsxx4_pluginmain.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
